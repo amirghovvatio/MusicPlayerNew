@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+
+    android:layout_marginBottom="4dp"
+    android:backgroundTint="#ECE5E5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:actualImageResource="@drawable/music_2_cover"
+            app:roundedCornerRadius="80dp"
+            android:id="@+id/coverList"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/coverList"
+            android:text="Khiz"
+            android:textColor="@color/black"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:id="@+id/tvMusicNameList"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Shayea"
+            android:textColor="#6E6C6C"
+            android:layout_toEndOf="@+id/coverList"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/animationViewMain"
+            app:lottie_rawRes="@raw/anime"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
